@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nithish's Web | Client Dashboard</title>
+    <!-- Tailwind CSS for rapid corporate styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for professional icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-[#181818] font-sans text-slate-800 antialiased selection:bg-blue-200">
+
+    <!-- Header / Title -->
+    <header class="bg-[#010C19] text-white shadow-md border-b border-white rounded-b-lg fixed top-0 left-0 right-0 z-50">
+        <div class="max-w-5xl mx-auto px-6 py-5 flex justify-between items-center">
+            <h1 class="text-2xl font-bold tracking-wide">Nithish's Web</h1>
+            <span class="text-xs font-semibold bg-blue-800 px-3 py-1.5 rounded-full border border-blue-700 tracking-wider uppercase">
+                Client Portal
+            </span>
+        </div>
+    </header>
+    <br><br><br><br><br> <!-- Spacing to account for fixed header -->
+
+    <!-- Main Dashboard Container -->
+    <main class="max-w-5xl mx-auto px-6 py-10 grid gap-8">
+
+        <!-- Section 1: Project Overview -->
+        <section class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 md:p-8">
+            <h2 class="text-sm font-bold text-slate-400 mb-5 uppercase tracking-widest border-b border-slate-100 pb-3">Project Overview <span class="text-xs font-semibold bg-blue-100 text-blue-700 px-2.5 py-1 rounded-md border border-blue-200">ID-2101</span> </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-slate-50 p-4 rounded-lg border border-slate-100">
+                    <p class="text-xs text-slate-500 font-semibold uppercase tracking-wider mb-1">Client Name</p>
+                    <p class="text-lg font-bold text-slate-800">[Enter Client Name]</p>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-lg border border-slate-100">
+                    <p class="text-xs text-slate-500 font-semibold uppercase tracking-wider mb-1">Work</p>
+                    <p class="text-lg font-bold text-slate-800">[Enter Project Type]</p>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-lg border border-slate-100">
+                    <p class="text-xs text-slate-500 font-semibold uppercase tracking-wider mb-1">Start Date</p>
+                    <p class="text-lg font-bold text-slate-800">[DD/MM/YYYY]</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Status Timeline -->
+        <section class="bg-black rounded-xl shadow-sm border border-slate-200 p-6 md:p-8">
+            <h2 class="text-sm font-bold text-slate-50 mb-6 uppercase tracking-widest border-b border-slate-100 pb-3">Current Status & Timeline</h2>
+            
+            <!-- Timeline Container -->
+            <div class="relative border-l-2 border-slate-200 ml-3 md:ml-4 space-y-8 mt-2">
+                
+                <!-- Step 1: Completed -->
+                <div class="relative pl-8">
+                    <div class="absolute -left-[11px] top-1 h-5 w-5 rounded-full bg-blue-600 border-4 border-white shadow-sm flex items-center justify-center animate-pulse"></div>
+                    <h3 class="font-bold text-blue-800">Requirements & Planning <span class="text-xs font-semibold bg-yellow-500 text-white px-2.5 py-0.5 rounded-md border border-yellow-200 animate-pulse">Payment Pending</span> </h3>  <span class="text-xs font-normal text-slate-400 ml-2">Current</span> 
+                    <p class="text-sm text-slate-500 mt-1">Initial strategy, scope definition, and UI/UX planning.</p>
+                    <span class="inline-block mt-2 text-xs font-semibold bg-green-100 text-green-700 px-2.5 py-1 rounded-md">In Progress</span>
+                </div>
+
+                <!-- Step 2: Active / Current -->
+                <div class="relative pl-8">
+                    <div class="absolute -left-[11px] top-1 h-5 w-5 rounded-full bg-slate-500 border-4 border-white shadow-sm"></div>
+                    <h3 class="font-bold text-slate-400">Development Phase</h3>
+                    <p class="text-sm text-slate-600 mt-1">Writing core application logic, setting up the database, and integrating APIs.</p>
+                    <span class="inline-block mt-2 text-xs font-semibold bg-blue-50 text-slate-500 px-2.5 py-1 rounded-md border border-blue-200">Pending</span>
+                </div>
+
+                <!-- Step 3: Pending -->
+                <div class="relative pl-8">
+                    <div class="absolute -left-[11px] top-1 h-5 w-5 rounded-full bg-slate-300 border-4 border-white shadow-sm"></div>
+                    <h3 class="font-bold text-slate-400">Testing & Revisions</h3>
+                    <p class="text-sm text-slate-400 mt-1">Quality assurance, bug fixes, and client feedback integration.</p>
+                    <span class="inline-block mt-2 text-xs font-semibold bg-slate-100 text-slate-500 px-2.5 py-1 rounded-md">Pending</span>
+                </div>
+                
+                <!-- Step 4: Pending -->
+                <div class="relative pl-8">
+                    <div class="absolute -left-[11px] top-1 h-5 w-5 rounded-full bg-slate-300 border-4 border-white shadow-sm"></div>
+                    <h3 class="font-bold text-slate-400">Final Handover</h3>
+                    <span class="inline-block mt-2 text-xs font-semibold bg-slate-100 text-slate-500 px-2.5 py-1 rounded-md">Pending</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section 3: Contact Details -->
+        <section class="bg-slate-900 rounded-xl shadow-lg border border-slate-800 p-6 md:p-8 text-white">
+            <h2 class="text-sm font-bold text-slate-400 mb-6 uppercase tracking-widest border-b border-slate-700 pb-3">Contact Nithish</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <!-- Gmail -->
+                <a href="mailto:nithishanaricle@gmail.com" class="group flex items-center space-x-4 p-4 rounded-xl bg-slate-800 hover:bg-blue-900 hover:border-blue-700 border border-transparent transition-all duration-300">
+                    <div class="bg-slate-700 group-hover:bg-blue-800 p-3 rounded-lg transition-colors">
+                        <i class="fas fa-envelope text-white text-lg"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-slate-400 font-semibold uppercase tracking-wider">Email</p>
+                        <p class="font-medium text-sm mt-0.5">nithishanaricle@gmail.com</p>
+                    </div>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/nithish2101/" target="_blank" class="group flex items-center space-x-4 p-4 rounded-xl bg-slate-800 hover:bg-blue-900 hover:border-blue-700 border border-transparent transition-all duration-300">
+                    <div class="bg-slate-700 group-hover:bg-blue-800 p-3 rounded-lg transition-colors">
+                        <i class="fab fa-linkedin text-white text-lg"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-slate-400 font-semibold uppercase tracking-wider">LinkedIn</p>
+                        <p class="font-medium text-sm mt-0.5">nithish2101</p>
+                    </div>
+                </a>
+
+                <!-- Mobile -->
+                <a href="tel:+917338883832" class="group flex items-center space-x-4 p-4 rounded-xl bg-slate-800 hover:bg-blue-900 hover:border-blue-700 border border-transparent transition-all duration-300">
+                    <div class="bg-slate-700 group-hover:bg-blue-800 p-3 rounded-lg transition-colors">
+                        <i class="fas fa-phone-alt text-white text-lg"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-slate-400 font-semibold uppercase tracking-wider">Mobile &  Whatsapp</p>
+                        <p class="font-medium text-sm mt-0.5">+91 7338883832</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
